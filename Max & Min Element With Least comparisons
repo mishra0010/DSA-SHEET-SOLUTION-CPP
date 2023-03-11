@@ -1,6 +1,6 @@
-# Maximum and minimum of an array using minimum number of comparisons
-# Ques Link - https://www.geeksforgeeks.org/maximum-and-minimum-in-an-array/
-# Solution 
+//# Maximum and minimum of an array using minimum number of comparisons
+//# Ques Link - https://www.geeksforgeeks.org/maximum-and-minimum-in-an-array/
+//# Solution 
 #include<bits/stdc++.h>
 using namespace std;
 int
