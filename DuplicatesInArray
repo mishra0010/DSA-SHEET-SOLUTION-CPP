@@ -1,0 +1,27 @@
+// # Contains Duplicate
+// # Question Link - https://leetcode.com/problems/contains-duplicate/description/
+// # Solution -
+#include<bits/stdc++.h>
+using namespace std;
+int
+main ()
+{
+  int n;
+  cin >> n;
+  int a[n];
+  for (int i = 0; i < n; i++)
+    {
+      cin >> a[i];
+    }
+    int size = sizeof(a)/sizeof(a[0]);
+  unordered_set <int > s;
+  for(int i=0;i<n;i++){
+      s.insert(a[i]);
+  }
+  if(size>s.size()){
+      cout<<"Contain Duplicate Elements"<<endl;
+  }
+  else{
+      cout<<"Not Contain any duplicate Elements"<<endl;
+  }
+}
