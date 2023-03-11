@@ -1,0 +1,30 @@
+// # Chocolate Distribution Problem
+// # Question Link - https://www.geeksforgeeks.org/chocolate-distribution-problem/
+// # Solution -
+
+#include<bits/stdc++.h>
+using namespace std;
+int
+main ()
+{
+  int n;
+  cin >> n;
+  int a[n];
+  for (int i = 0; i < n; i++)
+    {
+      cin >> a[i];
+    }
+  int m;
+  cin >> m;
+  sort (a, a + n);
+  int min_diff = INT_MAX;
+  for (int i = 0; i + m - 1 < n; i++)
+    {
+      int diff = a[i + m - 1] - a[i];
+      if (diff < min_diff)
+	{
+	  min_diff = diff;
+	}
+    }
+  cout << "Minimum Difference is : " << min_diff << endl;
+}
