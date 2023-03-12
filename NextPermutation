@@ -1,0 +1,28 @@
+// # Question - Next Permutation
+// # Question Link - https://leetcode.com/problems/next-permutation/description/
+// # Solution -
+
+#include <bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+	int arr[] = { 1, 2, 3 };
+	
+	do {
+		cout << arr[0] << " " << arr[1] << " " << arr[2] << "\n";
+	} while (next_permutation(arr, arr + 3));
+
+
+	return 0;
+}
+
+// # Leetcode Solution - 
+/*
+class Solution {
+public:
+    void nextPermutation(vector<int>& nums) {
+         next_permutation(nums.begin(), nums.end());
+    }
+};
+*/
