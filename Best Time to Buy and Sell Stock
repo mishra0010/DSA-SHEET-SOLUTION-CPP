@@ -1,0 +1,44 @@
+// # Question - Best Time to Buy and Sell Stock
+// # Question Link - https://leetcode.com/problems/best-time-to-buy-and-sell-stock/
+// # Solution - 
+
+#include <bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+	int n;
+	cin>>n;
+	int ans = 0;
+	int diff = 0;
+	vector<int> v(n);
+	for(int i=0;i<n;i++){
+	    cin>>v[i];
+	}
+	int minimum_ele = v[0];
+	for(int i =0;i<n;i++){
+	    minimum_ele = min(minimum_ele,v[i]);
+	    diff = v[i] - minimum_ele;
+	    ans = max(ans , diff);
+	}
+	cout<<ans<<endl;
+	
+}
+
+// # Leetcode Solution - 
+/*
+class Solution {
+public:
+    int maxProfit(vector<int>& prices) {
+        int mini = prices[0];
+        int diff=0;
+        int ans=0;
+        for(int i=0;i<prices.size();i++){
+            mini = min(mini,prices[i]); // 0 , 1 , 1 , 1 , 1 , 1
+            diff = prices[i] - mini;// 0 , 0 , 4 , 2 , 5 , 3
+            ans = max(ans,diff); // 0 , 0 , 4 , 4 , 5 , 5
+        }
+     return ans;   
+    }
+};
+*/
