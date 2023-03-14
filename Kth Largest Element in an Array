@@ -1,0 +1,36 @@
+// # Question - Kth Largest Element in an Array
+// # Ques Link - https://leetcode.com/problems/kth-largest-element-in-an-array/description/
+// # Solution - 
+
+
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int main()
+{
+    int n;
+    cin>>n;
+    vector<int> v(n);
+    for(int i=0;i<n;i++){
+        cin>>v[i];
+    }
+    int k;
+    cin>>k;
+    sort(v.begin(),v.end(),greater<int>());
+    cout<<v[k-1]<<endl;
+    
+
+    return 0;
+}
+// # Leetcode Solution - 
+/*
+class Solution {
+public:
+    int findKthLargest(vector<int>& nums, int k) {
+        // int size = nums.size()-1;
+        sort(nums.begin(),nums.end(),greater<int>());//6 5 4 3 2 1
+        return nums[k-1];
+    }
+};
+*/
