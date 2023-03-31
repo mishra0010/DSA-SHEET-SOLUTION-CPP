@@ -19,7 +19,7 @@ main ()
       s.insert(a[i]);
   }
   if(size>s.size()){
-      cout<<"Contain Duplicate Elements"<<endl;
+      cout<<"Contains Duplicate Elements"<<endl;
   }
   else{
       cout<<"Not Contain any duplicate Elements"<<endl;
